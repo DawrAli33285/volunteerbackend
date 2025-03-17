@@ -5,6 +5,7 @@ try{
    
     if(req.headers.authorization.startsWith(`Bearer`)){
     let token=req.headers.authorization.split(" ")[1]
+    
     let user=jwt.verify(token,process.env.JWT_KEY)
     if(user){
 req.user=user.user

@@ -28,7 +28,7 @@ it("returns 200 status code if everything passed correctly", async () => {
 });
 
 it("returns 200 status code if user email and password are correct",async()=>{
-    const res=await request(app).post('/api/auth/login').send({email:"shahg33285@gmail.com",password:"dawar"})
+    const res=await request(app).post('/api/auth/login').send({email:"dawar@gmail.com",password:"dawar"})
     expect(res.statusCode).toEqual(200)
 })
 

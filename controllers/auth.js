@@ -75,6 +75,7 @@ return res.status(200).json({
     message:"User registered successfully"
 })
     }catch(e){
+        console.log(e.message)
         return res.status(400).json({
             error:"Something went wrong please try again"
         })
